@@ -27,6 +27,10 @@ dependencies:
   fl_chart: ^0.55.2
   threading: ^0.0.10
   easy_isolate: ^1.3.0
+  rxdart: ^0.27.5
+  rxdart_ext: ^0.2.6
+  hand_signature: ^2.3.0+1
+  perfect_freehand: ^1.0.4
 
 
 dev_dependencies:

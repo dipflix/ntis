@@ -7,11 +7,29 @@ class AppNavigationWrapper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AutoTabsRouter(
+    return AutoTabsScaffold(
       homeIndex: 0,
       routes: [
+        const AutoassociativeRouter(),
         HomeRouter(),
+
       ],
+      bottomNavigationBuilder: (context, tabsRouter) {
+        return BottomNavigationBar(
+            currentIndex: tabsRouter.activeIndex,
+            onTap: (index) => tabsRouter.setActiveIndex(index),
+            items: const [
+              BottomNavigationBarItem(
+                label: "Autoassociative",
+                icon: Icon(Icons.smart_toy_outlined),
+              ),
+              BottomNavigationBarItem(
+                label: "Base neural",
+                icon: Icon(Icons.smart_toy),
+              ),
+
+            ]);
+      },
     );
   }
 }

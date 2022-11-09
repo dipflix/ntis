@@ -75,7 +75,7 @@ class NeuralNetworkBlocImpl extends NeuralNetworkBloc {
     await network.train(
         inputs: trainingData,
         expected: expected,
-        iterations: 1000,
+        iterations: 500,
         receivePort: receivePort);
 
     //  await network.saveToJson();

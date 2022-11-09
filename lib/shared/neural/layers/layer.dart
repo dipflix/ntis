@@ -74,7 +74,7 @@ class Layer {
     }
   }
 
-  Future<List<double>> propagate(List<double> weightMargins) async {
+  List<double> propagate(List<double> weightMargins)  {
     final newWeightMargins = <List<double>>[];
 
     for (final neuron in neurons) {

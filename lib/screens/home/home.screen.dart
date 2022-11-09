@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:labs/bloc/bloc.dart';
-import 'package:labs/shared/neural/neural.dart';
-
 import 'package:labs/uikit/uikit.dart';
 
 class HomeScreen extends StatelessWidget {

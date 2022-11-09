@@ -1,7 +1,8 @@
 import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:labs/app_navigation.wrapper.dart';
-import 'package:labs/screens/home/home.screen.dart';
+
+import '../screens/screens.dart';
 
 @MaterialAutoRouter(
   replaceInRouteName: 'Screen,Route',
@@ -14,6 +15,12 @@ import 'package:labs/screens/home/home.screen.dart';
           name: "HomeRouter",
           path: '',
           page: HomeScreen,
+        ),
+        AutoRoute(
+          name: "AutoassociativeRouter",
+          path: '',
+          initial: true,
+          page: AutoassociativeScreen,
         ),
       ],
     ),

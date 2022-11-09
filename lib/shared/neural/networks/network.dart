@@ -91,8 +91,6 @@ class Network {
 
         layer.initializeFromJsonNeurons(neurons);
 
-        print(layer.neurons[0].weights);
-
         return layer;
       });
 
